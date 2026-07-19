@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="Website-icon.jpg">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<title data-en="Time Studio | Russia Donate" data-ru="Time Studio | Донат из России">Time Studio | Russia Donate</title>
+<meta name="description" content="Official Time Studio donation page. Support our Roblox projects, community events, and game updates.">
+<meta name="keywords" content="Time Studio, Roblox, Donate, T-Bank, Ali Babalaev">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Time Studio | Donate">
+<meta property="og:description" content="Support the continued development of our Roblox projects and community events.">
+<meta property="og:image" content="Website-icon.jpg">
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Time Studio | Donate">
+<meta property="twitter:description" content="Support the continued development of our Roblox projects and community events.">
+<meta property="twitter:image" content="Website-icon.jpg">
+
+<a href="#" class="logo">
+    <img src="Website-icon.jpg" alt="Time Studio Logo">
+    <span>Time Studio</span>
+</a>
+
+<div class="lang-switch">
+    <button id="btn-en" class="active" onclick="setLanguage('en')">EN</button>
+    <button id="btn-ru" onclick="setLanguage('ru')">RU</button>
+</div>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:90%;
+    max-width:900px;
+    text-align:center;
+    padding:50px;
+    border:2px solid #fff;
+    border-radius:15px;
+    background:#000;
+    margin-top: 90px; /* Provides top clear spacing below the fixed headers */
+    margin-bottom: 40px;
+}
+
+h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+/* "TIME" - Text Color: Black & Stroke Color: White */
+.time-word {
+    color: #000;
+    -webkit-text-stroke: 1.5px #fff;
+    text-stroke: 1.5px #fff;
+}
+
+/* "DONATE" - Text Color: Green */
+.donate-word {
+    color: #00cc66;
+}
+
+/* Dollar Icon Style - Color: Green */
+.dollar-icon {
+    color: #00cc66;
+    margin-left: 8px;
+}
+
+h2{
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+.notice{
+    margin:20px 0 30px;
+    padding:16px;
+    border:2px solid #fff;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+.info{
+    margin-top:25px;
+    padding:20px;
+    border:1px solid #fff;
+    border-radius:10px;
+}
+
+.button{
+    display:inline-block;
+    margin-top:35px;
+    padding:18px 40px;
+    background:#fff;
+    color:#000;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:bold;
+    border-radius:10px;
+    transition:.25s;
+}
+
+.button i {
+    margin-left: 10px;
+}
+
+.button:hover{
+    background:#d9d9d9;
+}
+
+footer{
+    margin-top:45px;
+    color:#ccc;
+    font-size:15px;
+}
+
+.logo{
+    position:fixed;
+    top:20px;
+    left:20px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:#fff;
+    z-index:1000;
+}
+
+.logo img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+}
+
+.logo span{
+    font-size:22px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+/* Switcher Button Interface Elements Styling */
+.lang-switch {
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    display: flex;
+    gap: 8px;
+    z-index: 1000;
+}
+
+.lang-switch button {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.lang-switch button.active, .lang-switch button:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Mobile Compatibility Enhancements */
+@media (max-width: 600px) {
+    h1 { font-size: 32px; }
+    .container { padding: 25px; margin-top: 100px; }
+    .logo span { display: none; } /* Clear screen space on smaller screens */
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1 data-en="<span class='time-word'>TIME</span> STUDIO <span class='donate-word'>DONATE</span> <i class='fa-solid fa-dollar-sign dollar-icon'></i>" data-ru="<span class='donate-word'>ДОНАТ</span> <span class='time-word'>TIME</span> STUDIO <i class='fa-solid fa-dollar-sign dollar-icon'></i>">
+    <span class="time-word">TIME</span> STUDIO <span class="donate-word">DONATE</span> <i class="fa-solid fa-dollar-sign dollar-icon"></i>
+</h1>
+
+<h2 data-en="Russia Donate" data-ru="Донат из России">Russia Donate</h2>
+
+<div class="notice" 
+     data-en="🇷🇺 Available in Russia<br>🇺🇸 Unavailable in the United States" 
+     data-ru="🇷🇺 Доступно в России<br>🇺🇸 Недоступно в США">
+🇷🇺 Available in Russia<br>
+🇺🇸 Unavailable in the United States
+</div>
+
+<p data-en="Welcome to the official <strong>Time Studio Donate</strong> page. Your donations help support the continued development of our Roblox projects, community events, game updates, website improvements, Discord server management, and future creative ideas."
+   data-ru="Добро пожаловать на официальную страницу донатов <strong>Time Studio</strong>. Ваши пожертвования помогают поддерживать дальнейшую разработку наших проектов в Roblox, проведение мероприятий для сообщества, обновления игр, улучшение веб-сайта, управление Discord-сервером и реализацию будущих творческих идей.">
+Welcome to the official <strong>Time Studio Donate</strong> page.
+Your donations help support the continued development of our Roblox
+projects, community events, game updates, website improvements,
+Discord server management, and future creative ideas.
+</p>
+
+<p data-en="Every contribution, large or small, helps us improve our games, maintain our services, and create better experiences for everyone in the Time Studio community. We sincerely appreciate your support."
+   data-ru="Каждый вклад, большой или маленький, помогает нам улучшать наши игры, поддерживать работу сервисов и создавать лучшие условия для всех в сообществе Time Studio. Мы искренне ценим вашу поддержку.">
+Every contribution, large or small, helps us improve our games,
+maintain our services, and create better experiences for everyone in
+the Time Studio community. We sincerely appreciate your support.
+</p>
+
+<div class="info">
+<h3 data-en="Donation Information" data-ru="Информация о донате">Donation Information</h3>
+
+<p data-en="<strong>Availability:</strong> Russia Only" 
+   data-ru="<strong>Доступность:</strong> Только Россия"><strong>Availability:</strong> Russia Only</p>
+
+<p data-en="<strong>Account Phone Number:</strong><br>+7 906 005-59-03" 
+   data-ru="<strong>Номер телефона аккаунта:</strong><br>+7 906 005-59-03"><strong>Account Phone Number:</strong><br>
++7 906 005-59-03</p>
+
+<p data-en="<strong>Contact Phone Number:</strong><br>+7 906 005-59-03" 
+   data-ru="<strong>Контактный номер телефона:</strong><br>+7 906 005-59-03"><strong>Contact Phone Number:</strong><br>
++7 906 005-59-03</p>
+
+<p data-en="Named Ali Babalaev language English" 
+   data-ru="Названный Али Бабалаев Язык английский">Named Ali Babalaev language English</p>
+</div>
+
+<a class="button"
+href="https://www.tinkoff.ru/rm/r_JVtxckdnFt.rfQhxRnvrZ/xNANh39286"
+target="_blank"
+rel="noopener noreferrer"
+data-en="T Bank Donate Link <i class='fa-solid fa-bag-shopping'></i>"
+data-ru="Ссылка на донат Т-Банк <i class='fa-solid fa-bag-shopping'></i>">
+T Bank Donate Link <i class="fa-solid fa-bag-shopping"></i>
+</a>
+
+<footer data-en="© 2026 Time Studio. All Rights Reserved." 
+        data-ru="© 2026 Time Studio. Все права защищены.">
+© 2026 Time Studio. All Rights Reserved.
+</footer>
+
+</div>
+
+<script>
+function setLanguage(lang) {
+    // Dynamic text data replacement loop
+    document.querySelectorAll('[data-en]').forEach(el => {
+        el.innerHTML = el.getAttribute(`data-${lang}`);
+    });
+    
+    // Dynamic site window tab title replacement
+    const titleEl = document.querySelector('title');
+    if(titleEl) titleEl.innerText = titleEl.getAttribute(`data-${lang}`);
+    
+    // Active design class configuration for menu selectors
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
+    
+    localStorage.setItem('preferredLanguage', lang);
+}
+
+// Automatic Routing & Public Geolocation Initialization Engine
+window.onload = async () => {
+    const savedLang = localStorage.getItem('preferredLanguage');
+    if (savedLang) {
+        setLanguage(savedLang);
+        return;
+    }
+
+    try {
+        const response = await fetch('https://freeipapi.com/api/json');
+        const data = await response.json();
+        
+        if (data.countryCode === 'RU') {
+            setLanguage('ru');
+        } else if (data.countryCode === 'US') {
+            setLanguage('en');
+        } else {
+            setLanguage('en'); // Global standard localization fallback
+        }
+    } catch (error) {
+        setLanguage('en'); // Safety validation fallback if scripts/trackers are blocked
+    }
+};
+</script>
+
+</body>
+</html>
